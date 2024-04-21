@@ -26,20 +26,20 @@ function Tables(prop) {
             <div>
                 {Object.entries(groupHoldingsByAssetClass()).map(([assetClass, holdings]) => (
                     <Accordion key={assetClass}>
-                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                            <TableCell>{assetClass}</TableCell>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon className='text-blue-600' />}>
+                            <TableCell className='text-blue-600'>{assetClass}</TableCell>
                         </AccordionSummary>
                         <AccordionDetails>
                             <TableContainer component={Paper}>
                                 <Table>
                                     <TableHead>
                                         <TableRow>
-                                            <TableCell>Name</TableCell>
-                                            <TableCell>Ticker</TableCell>
-                                            <TableCell>Average Price</TableCell>
-                                            <TableCell>Market Price</TableCell>
-                                            <TableCell>Latest Change (%)</TableCell>
-                                            <TableCell>Market Value (Base CCY)</TableCell>
+                                            <TableCell>NAME OF THE HOLDINGS </TableCell>
+                                            <TableCell>TICKER</TableCell>
+                                            <TableCell>AVERAGE PRICE</TableCell>
+                                            <TableCell>MARKET PRICE</TableCell>
+                                            <TableCell>LATEST CHANGE IN PERCENTAGE</TableCell>
+                                            <TableCell>MARKET VALUE BASE CCY</TableCell>
                                         </TableRow>
                                     </TableHead>
                                     <TableBody>
